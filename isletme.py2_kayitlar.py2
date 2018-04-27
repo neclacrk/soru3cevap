@@ -1,0 +1,56 @@
+def ybs1EtkilesimOrani(begeniSayisi,yorumSayisi,paylasimSayisi,icerikSayisi,takipciSayisi):
+    ybs1=((begeniSayisi+yorumSayisi+paylasimSayisi)/icerikSayisi)/takipciSayisi)*100
+    print(ybs1)
+
+def ybs2EtkilesimOrani(begeniSayisi,yorumSayisi,paylasimSayisi,icerikSayisi,takipciSayisi):
+    ybs2=((begeniSayisi+yorumSayisi+paylasimSayisi)/icerikSayisi)/takipciSayisi)*100
+    print(ybs2)
+
+def ybs3EtkilesimOrani(begeniSayisi,yorumSayisi,paylasimSayisi,icerikSayisi,takipciSayisi):
+    ybs3=((begeniSayisi+yorumSayisi+paylasimSayisi)/icerikSayisi)/takipciSayisi)*100
+    print(ybs3)
+
+
+
+from isletme import ybs1EtkilesimOrani
+print("YBS1 Etkileşim Oranı")
+x=int(input("Beğeni sayısını giriniz:"))
+y=int(input("Yorum sayısını giriniz:"))
+z=int(input("Paylaşım sayısını giriniz:"))
+k=int(input("İçerik sayısını giriniz:"))
+t=int(input("Takipçi sayısını giriniz:"))
+ybs1EtkilesimOrani(x,y,z,k,t)
+
+if (ybs1EtkilesimOrani>0.20):
+    print("Başarılı")
+else:
+    print("Başarısız")
+
+from isletme import ybs2EtkilesimOrani
+print("YBS2 Etkileşim Oranı")
+x=int(input("Beğeni sayısını giriniz:"))
+y=int(input("Yorum sayısını giriniz:"))
+z=int(input("Paylaşım sayısını giriniz:"))
+k=int(input("İçerik sayısını giriniz:"))
+t=int(input("Takipçi sayısını giriniz:"))
+ybs2EtkilesimOrani(x,y,z,k,t)
+
+if (ybs2EtkilesimOrani>0.20):
+    print("Başarılı")
+else:
+    print("Başarısız")
+
+from isletme import ybs3EtkilesimOrani
+print("YBS3 Etkileşim Oranı")
+x=int(input("Beğeni sayısını giriniz:"))
+y=int(input("Yorum sayısını giriniz:"))
+z=int(input("Paylaşım sayısını giriniz:"))
+k=int(input("İçerik sayısını giriniz:"))
+t=int(input("Takipçi sayısını giriniz:"))
+ybs3EtkilesimOrani(x,y,z,k,t)
+
+if (ybs3EtkilesimOrani>0.20):
+    print("Başarılı")
+else:
+    print("Başarısız")
+
